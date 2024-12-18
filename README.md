@@ -1,4 +1,6 @@
-<h1 style="text-align: center;">The Real Feel Temperature Web Application</h1>
+<div style="text-align: center;"> 
+    <h1>The Real Feel Temperature Web Application</h1>
+</div>
 
 ## Description
 
