@@ -23,6 +23,9 @@ Status: WIP
 
     <body>
         <div class="card">
+            <div class="title">
+                <p>Real Feel Temperature</p>
+            </div>
 
             <div class="search">
                 <input type="text" placeholder="Enter city name" spellcheck="false">
@@ -31,10 +34,14 @@ Status: WIP
                 </button>
             </div>
 
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+
             <div class="weather">
 
                 <img  class="weather-icon" src="images/rain.png" alt="Icon for displaying weather conditions">
-                <h1 class="temp">22°c</h1>
+                <h1 class="temp">22°F</h1>
                 <h2 class="city">Chicago</h2>
 
                 <div class="details">
@@ -50,7 +57,7 @@ Status: WIP
                     <div class="col">
                         <img src="images/wind.png" alt="Wind icon">
                         <div>
-                            <p class="wind">15 km/h</p>
+                            <p class="wind">15 mph</p>
                             <p>Wind Speed</p>
                         </div>
                     </div>
