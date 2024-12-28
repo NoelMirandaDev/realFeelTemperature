@@ -121,23 +121,27 @@ body {
 }
 
 @media (max-width: 375px) {
-    
-    .card {
+
+    html, body {
+        height: 100%;
         width: 100%;
+    }
+
+    .card {
+        margin: 0 auto;
+        background: linear-gradient(135deg, #0000FF, #ADD8E6);
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
         min-width: 320px;
         padding: 25px 15px;
     }
     
-    .search {
-        width: 100%;
-    }
-    
     .col img {
-        width: 30px;
+        width: 50px;
     }
 
     .humidity, .wind {
-        font-size: 18px;
         margin-top: -4px;
     }
 
@@ -146,21 +150,22 @@ body {
     }
     
     .weather-icon {
-        width: 160px;
+        width: 170px;
         margin-top: 40px;
+        margin-bottom: 30px;
     }
     
     .weather h1 {
-        font-size: 60px;
-        font-weight: 500;
+        margin-top: 20px;
     }
     
     .weather h2 {
-        font-size: 38px;
+        font-size: 40px;
+        font-size: 45px;
     }
     
     .weather h3 {
-        font-size: 18px;
+        margin-top: 25px;
     }
 
     .search input {
@@ -172,25 +177,42 @@ body {
         width: 40px;
         height: 40px;
     }
+
+    .details {
+        display: block;
+        justify-items: center;
+    }
+
+    .col {
+        margin-top: 80px;
+    }
+
+    .labels {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 425px) and (min-width: 376px) {
     
-    .card {
+    html, body {
+        height: 100%;
         width: 100%;
+    }
+
+    .card {
+        margin: 0 auto;
+        background: linear-gradient(135deg, #0000FF, #ADD8E6);
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
         padding: 30px 20px;
     }
     
-    .search {
-        width: 100%;
-    }
-    
     .col img {
-        width: 40px;
+        width: 60px;
     }
 
     .humidity, .wind {
-        font-size: 25px;
         margin-top: -5px;
     }
 
@@ -199,21 +221,22 @@ body {
     }
     
     .weather-icon {
-        width: 160px;
-        margin-top: 40px;
+        width: 180px;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
     
     .weather h1 {
-        font-size: 70px;
-        font-weight: 500;
+        margin-top: 25px;
     }
     
     .weather h2 {
-        font-size: 45px;
+        font-size: 50px;
     }
     
     .weather h3 {
-        font-size: 20px;
+        font-size: 25px;
+        margin-top: 30px;
     }
 
     .search input {
@@ -224,5 +247,18 @@ body {
     .search button {
         width: 50px;
         height: 50px;
+    }
+
+    .details {
+        display: block;
+        justify-items: center;
+    }
+
+    .col {
+        margin-top: 80px;
+    }
+
+    .labels {
+        font-size: 20px;
     }
 }
