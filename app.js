@@ -8,9 +8,11 @@ const weatherIcon = document.querySelector(".weather-icon");
 async function checkWeather(city) {
     // Checks if the input is empty before making the request
     if (city.trim() === "") {
-        document.querySelector(".error").innerText = "Please enter a city name.";
+        document.querySelector(".error p").innerText = "Please enter a city name.";
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
+        document.querySelector(".title").style.display = "none";
+
         return; // stops further execution
     }
     
@@ -18,9 +20,11 @@ async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
     if (response.status == 404) {
-        document.querySelector(".error").innerText = "City not found.";
+        document.querySelector(".error p").innerText = "City not found.";
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
+        document.querySelector(".title").style.display = "none";
+
     } else {
         let data = await response.json();
 
@@ -45,6 +49,7 @@ async function checkWeather(city) {
 
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = "none";
+        document.querySelector(".title").style.display = "none";
     }
 }
 

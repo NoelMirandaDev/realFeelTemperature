@@ -14,7 +14,7 @@ body {
     max-width: 470px;
     background: linear-gradient(135deg, #0000FF, #ADD8E6);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -90,6 +90,7 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 .col {
@@ -118,6 +119,26 @@ body {
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+.error h1 {
+    margin: 0 auto 10px;
+    color: gold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.title {
+    display: block;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    color: gold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.title img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
 }
 
 @media (max-width: 375px) {
@@ -184,6 +205,7 @@ body {
         display: block;
         justify-items: center;
         justify-content: none;
+        margin-bottom: 50px;
     }
 
     .col {
@@ -262,6 +284,7 @@ body {
         display: block;
         justify-items: center;
         justify-content: none;
+        margin-bottom: 50px;
     }
 
     .col {
