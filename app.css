@@ -79,7 +79,7 @@ body {
 }
 
 .weather h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     margin-top: 10px;
 }
@@ -144,10 +144,16 @@ body {
 .high-low {
     display: flex;
     justify-content: center;
+    font-size: 18px;
 }
 
-.high-low p {
+#high {
     margin-right: 10px;
+}
+
+#subtext {
+    font-size: 14px;
+    text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -190,13 +196,15 @@ body {
     
     .weather h1 {
         margin-top: 0px;
+        font-size: 60px;
     }
     
     .weather h2 {
-        font-size: 45px;
+        font-size: 30px;
     }
     
     .weather h3 {
+        font-size: 15px;
         margin-top: 5px;
     }
 
@@ -221,6 +229,10 @@ body {
 
     .high-low p {
         font-size: 15px;
+    }
+
+    #subtext {
+        font-size: 12px;
     }
 }
 
@@ -258,20 +270,21 @@ body {
     .weather-icon {
         width: 180px;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .weather h1 {
         margin-top: 0px;
+        font-size: 70px;
     }
     
     .weather h2 {
-        font-size: 45px;
+        font-size: 40px;
     }
     
     .weather h3 {
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 16px;
+        margin-top: 5px;
     }
 
     .search input {
@@ -289,10 +302,14 @@ body {
     }
 
     .labels {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .high-low p {
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    #subtext {
+        font-size: 13px;
     }
 }
