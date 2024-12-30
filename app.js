@@ -32,6 +32,8 @@ async function checkWeather(city) {
         document.querySelector(".temp").innerHTML = Math.round(data.main.feels_like) + "°F";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " mph";
+        document.querySelector("#high").innerHTML = "H:" + Math.round(data.main.temp_max) + "°";
+        document.querySelector("#low").innerHTML = "L:" + Math.round(data.main.temp_min) + "°";
 
         if (data.weather[0].main === "Mist") {
             weatherIcon.src = "images/mist.png";
