@@ -15,7 +15,7 @@ body {
     background: linear-gradient(120deg, rgb(37, 2, 153), rgb(38, 132, 213));
     color: #fff;
     margin: 50px auto 0;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 40px 35px;
     text-align: center;
 }
@@ -166,7 +166,6 @@ body {
     }
 
     .card {
-        /*border-radius: 0 0 30px 30px;*/
         border-radius: 0;
         margin: 0 auto;
         width: 100vw;
@@ -174,7 +173,7 @@ body {
         min-height: 100vh;
         padding: 25px 15px;
     }
-    
+
     .col img {
         width: 30px;
     }
@@ -326,6 +325,7 @@ body {
 
 @media (orientation: landscape) and (min-width: 426px) {
     .card {
-        border-radius: 20px;
+        border-radius: 30px !important;
     }
 }
+
