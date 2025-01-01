@@ -324,7 +324,7 @@ body {
     }
 }
 
-@media (orientation: landscape) and (max-width: 425px) {
+@media (orientation: landscape) and (min-width: 426px) {
     .card {
         border-radius: 20px;
     }
