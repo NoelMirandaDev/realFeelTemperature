@@ -77,7 +77,7 @@ async function checkWeather(city) {
             document.querySelector(".card").style.background = "#35576D";
         } else if (data.weather[0].main === "Snow") {
             weatherIcon.src = "images/snow.png";
-            document.querySelector(".card").style.background = "A8C6D1";
+            document.querySelector(".card").style.background = "#A8C6D1";
         } 
 
         document.querySelector(".weather").style.display = "block";
